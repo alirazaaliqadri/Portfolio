@@ -17,7 +17,7 @@ export default function Home() {
                 <Typography variant="subtitle1" component="h2">A machine & deep learning enthusiast who loves to learn and explore new stuff.<br />
                     Freelancer at <a style={{ listStyle: 'none' }} href="https://www.upwork.com/o/profiles/users/~01150474853365a540/"><b>UpWork</b></a></Typography>
                 <br />
-                <Button size="medium" color="primary" variant="contained" href="./Resume-CV/Ali Raza Ali ML CV.pdf" download>Resume/CV</Button>
+                <Button size="medium" color="primary" variant="contained" href="../Components/Resume-CV/Ali Raza Ali Resume-CV.pdf" download>Resume/CV</Button>
             </Paper>
 
             <Link to="/Project">
