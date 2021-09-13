@@ -1,0 +1,24 @@
+.home {
+    /* background-image: url("https://wallpaperaccess.com/full/237709.jpg"); */
+    background-color: rgba(88, 86, 83, 0.698) !important;
+    
+    background-image: linear-gradient(to bottom, rgba(228, 226, 224, 0.73), rgba(68, 65, 65, 0.842)), url("Images/BackgroundImage.png");    
+    min-height: 85vh;
+    /* padding:10vh, */
+}
+
+@media screen and (max-width: 768px) {
+    
+    .home {
+        background-image: linear-gradient(to bottom, rgba(228, 226, 224, 0.73), rgba(68, 65, 65, 0.842)), url("Images/BackgroundImage.png");    
+        /* background-color: rgba(228, 226, 224, 0.822) !important; */
+    }
+    .homePaper {
+        min-width: 10px;
+        position: relative;
+        max-width: 40vh;
+    }
+    .homeProjectBtn {
+        left: 15%;
+    }
+}
