@@ -13,7 +13,7 @@
     }
     .homePaper {
         position: absolute;
-        max-width: 0vh;
+        max-width: 85vh;
     }
     .homeProjectBtn {
         left: 15%;
