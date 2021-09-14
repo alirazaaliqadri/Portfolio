@@ -26,7 +26,6 @@ export default function Home() {
                     float:'right', top:"80vh", marginRight:"10vh",
                 }}>View Projects</Button>
             </Link>
-            {/* <Typography variant="subtitle1" component="h2" style={{position:"absolute", right:"30vh",bottom:"10vh"}}>Learn More About Me...</Typography> */}
         </div>
     )
 }

@@ -68,7 +68,7 @@ export default function Projects() {
             <Typography variant="h2" component="h4">My Projects</Typography>
             <Link to="/">
                 <Tooltip title="Back to Home" aria-label="Home">
-                    <ArrowBackIosTwoToneIcon variant="outlined" color="primary" style={{ position: "absolute", float: 'left', left: "5vh", top: "4vh" }} />
+                    <ArrowBackIosTwoToneIcon variant="outlined" color="primary" style={{ position: "absolute", float: 'left', left: "10px", top: "4vh" }} />
                 </Tooltip>
             </Link>
             <br />

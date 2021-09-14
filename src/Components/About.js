@@ -32,10 +32,9 @@ export default function About() {
     return (
 
         <div className="container-fluid" style={{ backgroundColor: "rgba(228, 226, 224, 0.822) !important;" }}>
-            <br />
             <Link to="/">
                 <Tooltip title="Back to Home" aria-label="Home">
-                    <ArrowBackIosTwoTone variant="outlined" color="primary" style={{ position: "absolute", float: 'left', left: "5vh", top: "4vh" }} />
+                    <ArrowBackIosTwoTone variant="outlined" color="primary" style={{ position: "absolute", float: 'left', left: "10px", top: "4vh" }} />
                 </Tooltip>
             </Link>
             <Grid
