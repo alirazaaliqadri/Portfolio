@@ -15,9 +15,22 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import WorkOutlineRoundedIcon from '@material-ui/icons/WorkOutlineRounded';
 import LocalLibraryRoundedIcon from '@material-ui/icons/LocalLibraryRounded';
-import { Grid, Tooltip } from '@material-ui/core';
+import { createTheme, Grid, ThemeProvider, Tooltip } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import ArrowBackIosTwoTone from '@material-ui/icons/ArrowBackIosTwoTone';
+
+const theme = createTheme();
+
+theme.typography.h3 = {
+  fontSize: '1.2rem',
+  '@media (min-width:600px)': {
+    fontSize: '1.5rem',
+  },
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2.4rem',
+  },
+};
+
 const useStyles = makeStyles((theme) => ({
     paper: {
         padding: '6px 16px',
@@ -30,7 +43,7 @@ export default function About() {
     const classes = useStyles();
 
     return (
-
+        <ThemeProvider theme={theme}>
         <div className="container-fluid" style={{ backgroundColor: "rgba(228, 226, 224, 0.822) !important;" }}>
             <Link to="/">
                 <Tooltip title="Back to Home" aria-label="Home">
@@ -188,5 +201,6 @@ export default function About() {
                 </Grid>
             </Grid>
         </div>
+        </ThemeProvider>
     )
 }

@@ -66,14 +66,13 @@
     .contactContainer {
         max-width: 40vh;
         min-height: 115vh !important;
-        background-color: transparent;
         display: flex;
-        margin-left: -100vh;
     }
     .contactMainDiv {
         max-width: 50vh !important;
-        margin-top: -15vh !important;
+        margin-top: -5vh !important;
         background-color: transparent;
+        /* color:black; */
     }
     .messageField {
         margin-left: -8vh !important;
