@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { AppBar, createTheme, Grid, ThemeProvider, Tooltip, Typography } from '@material-ui/core';
@@ -9,14 +9,6 @@ import { Link } from 'react-router-dom';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
 import Datascience from './ProjectsComponents/Datascience';
-import { useHistory } from "react-router-dom";
-
-
-const useStyles = makeStyles({
-    root: {
-        flexGrow: 1,
-    },
-});
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -63,7 +55,7 @@ theme.typography.h3 = {
     },
 };
 export default function Projects() {
-    const classes = useStyles();
+    
     const [value, setValue] = React.useState(0);
     const theme = useTheme();
     const handleChange = (event, newValue) => {

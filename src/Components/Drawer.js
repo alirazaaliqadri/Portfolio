@@ -6,10 +6,8 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import MailOutlineTwoToneIcon from '@material-ui/icons/MailOutlineTwoTone';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -20,7 +18,6 @@ import Avatar from '@material-ui/core/Avatar';
 import ProfilePic from './DP.jpg';
 import { Facebook, GitHub, Instagram, LinkedIn, Twitter } from '@material-ui/icons';
 import Home from './Home';
-import About from './About';
 import { Link } from 'react-router-dom';
 const drawerWidth = 240;
 
@@ -82,8 +79,10 @@ function ResponsiveDrawer(props) {
         <ListItemText><Typography style={{ fontWeight: 'bolder' }}> Ali Raza Ali Qadri</Typography></ListItemText>
       </List>
       <div>
-        <Typography variant="body2" component="h4" variant="h2" style={{ fontSize: 'small', fontWeight: "bold" }}><MailOutlineTwoToneIcon style={{ fontSize: 'small', marginRight: '2px' }} />
-          {'alirazaaliqadri@gmail.com'}</Typography>
+        <Typography variant="body2" component="h5" variant="suptitle2" >
+          <MailOutlineTwoToneIcon style={{ fontSize: 'small', marginRight: '2px' }} />
+          alirazaaliqadri@gmail.com
+        </Typography>
       </div>
       <br />
       <Divider />

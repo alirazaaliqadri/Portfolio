@@ -1,6 +1,6 @@
+import React from 'react';
 import { Button, Paper, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
 import '@fontsource/roboto';
 import './Components.css'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
