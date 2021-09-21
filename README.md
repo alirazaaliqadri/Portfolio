@@ -7,4 +7,4 @@ My Portfolio
 > 3. Surge
 
 
-Deployed Surge URL: [Click Here] (#http://alirazaali-portfolio.surge.sh/)
+Deployed Surge URL: [Click Here](#http://alirazaali-portfolio.surge.sh/)
