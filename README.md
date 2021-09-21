@@ -1,7 +1,7 @@
 # Portfolio
 My Portfolio
 
-##Technologies used
+## Technologies used
 > 1. React.Js 
 > 2. Material UI
 > 3. Surge
