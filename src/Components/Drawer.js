@@ -87,24 +87,21 @@ function ResponsiveDrawer(props) {
       <br />
       <Divider />
       <List>
-      <Link to="/" style={{ textDecoration: "None", color:"black" }}>
-        <ListItemLink style={{ textDecoration: "None" }}>
-          <ListItemText primary={'Home'} fontSize='medium'/>
-        </ListItemLink>
-      </Link>
-      <Link to="/About" style={{ textDecoration: "None",color:"black" }}>
-        <ListItemLink>
-          <ListItemText primary={'About'} fontSize='medium' style={{ textDecoration: "None" }}/>
-        </ListItemLink>
-      </Link>
-      <Link to="/Contact" style={{ textDecoration: "None",color:"black" }}>
-        <ListItemLink>
-          <ListItemText primary={'Contact'} fontSize='medium' style={{ textDecoration: "None" }} />
-        </ListItemLink>
+        <Link to="/" style={{ textDecoration: "None", color: "black" }}>
+          <ListItemLink style={{ textDecoration: "None" }}>
+            <ListItemText primary={'Home'} fontSize='medium' />
+          </ListItemLink>
+        </Link>
+        <Link to="/About" style={{ textDecoration: "None", color: "black" }}>
+          <ListItemLink>
+            <ListItemText primary={'About'} fontSize='medium' style={{ textDecoration: "None" }} />
+          </ListItemLink>
         </Link>
       </List>
       <br />
       <Divider />
+      <br/>
+      <Typography variant="h5">Contact</Typography>
       <List>
         <ListItemLink href="https://www.facebook.com/alirazaaliqadri1/">
           <Facebook fontSize='small' />

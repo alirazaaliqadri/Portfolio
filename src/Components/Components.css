@@ -63,11 +63,11 @@
         margin-left: 0.5vh !important;
         padding: 7vh !important;
     }
-    .contactContainer {
+    /* .contactContainer {
         max-width: 40vh;
         min-height: 115vh !important;
         display: flex;
-    }
+    } */
     .contactMainDiv {
         max-width: 50vh !important;
         margin-top: -5vh !important;
