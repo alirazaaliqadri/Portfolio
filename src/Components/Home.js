@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Paper, Typography } from '@material-ui/core';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '@fontsource/roboto';
 import './Components.css'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
@@ -8,7 +8,7 @@ import { createTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/co
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 export default function Home() {
-
+    const navigate = useNavigate();
     return (
         <div className="container-fluid home">
             <ThemeProvider theme={theme}>
@@ -22,13 +22,12 @@ export default function Home() {
                     <br />
                     <Button size="medium" color="primary" variant="contained"><a href="https://drive.google.com/file/d/16L9JZI0IfSoffayUUhdf7THAu1jvrO5F/view?usp=sharing" style={{ textDecoration: "None", color: "white" }}>Resume-CV</a></Button>
                 </Paper>
+                
+                <Button onClick={()=>{navigate('/Projects')}} className="homeProjectBtn" color="light" variant="contained" size="small" style={{
+                    position: "relative",
+                    float: 'right', top: "80vh", marginRight: "10vh",
+                }}>View Projects</Button>
 
-                <Link to="/Project">
-                    <Button className="homeProjectBtn" color="light" variant="contained" size="small" style={{
-                        position: "relative",
-                        float: 'right', top: "80vh", marginRight: "10vh",
-                    }}>View Projects</Button>
-                </Link>
             </ThemeProvider>
         </div>
     )

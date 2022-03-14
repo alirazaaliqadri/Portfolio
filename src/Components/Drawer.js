@@ -79,7 +79,7 @@ function ResponsiveDrawer(props) {
         <ListItemText><Typography style={{ fontWeight: 'bolder' }}> Ali Raza Ali Qadri</Typography></ListItemText>
       </List>
       <div>
-        <Typography variant="body2" component="h5" variant="suptitle2" >
+        <Typography component="h5" variant="suptitle2" >
           <MailOutlineTwoToneIcon style={{ fontSize: 'small', marginRight: '2px' }} />
           alirazaaliqadri@gmail.com
         </Typography>
@@ -184,7 +184,8 @@ function ResponsiveDrawer(props) {
       {/* <Home/> */}
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Home />
+        {/* <Home /> */}
+        {props.children}
         {/* <About /> */}
       </main>
     </div>
