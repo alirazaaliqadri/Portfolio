@@ -30,8 +30,9 @@ theme.typography.h3 = {
 
 const useStyles = makeStyles((theme) => ({
     paper: {
-        padding:2,
-        paddingInline: 4,
+        padding:5,
+        width:'100%',
+        display:'block'
     },
     secondaryTail: {
         backgroundColor: theme.palette.secondary.main,
